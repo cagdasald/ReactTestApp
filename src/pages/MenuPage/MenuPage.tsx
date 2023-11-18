@@ -10,15 +10,23 @@ function MenuPage() {
     <div id="menu-page" className="page">
       <h1 className="header">Apps</h1>
       <div className="page-content">
-        <Link to={router.WEATHER}>
-          <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
-        </Link>
-        <Link to={router.WEATHER}>
-          <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
-        </Link>
-        <Link to={router.WEATHER}>
-          <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
-        </Link>
+        <div>
+          <Link to={router.WEATHER}>
+            <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
+          </Link>
+        </div>
+
+        <div>
+          <Link to={router.WEATHER}>
+            <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
+          </Link>
+        </div>
+        
+        <div>
+          <Link to={router.WEATHER}>
+            <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -16,7 +16,6 @@ function App() {
           <Route path={router.WEATHER} element={<WeatherPage />} />
           <Route path='*' element={<Navigate to={router.MENU} />} />
         </Routes>
-        <WeatherPage />
       </AppLayout>
     );
   }

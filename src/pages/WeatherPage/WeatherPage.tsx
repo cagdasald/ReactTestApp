@@ -9,4 +9,4 @@ function WeatherPage() {
   )
 }
 
-export default WeatherPage
+export default WeatherPage;
