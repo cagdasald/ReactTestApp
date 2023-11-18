@@ -1,0 +1,10 @@
+#menu-page {
+  display: flex;
+  flex-direction: column;
+
+  .page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

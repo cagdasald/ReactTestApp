@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.container {
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+    
+    .image {
+      opacity: 1;
+      display: block;
+      width: 250px;
+      height: 250px;
+      transition: 1 ease;
+      backface-visibility: hidden;
+    }
+  
+    .middle {
+      transition: 2 ease;
+      opacity: 0;
+      text-align: center;
+    }
+  
+    &:hover .image {
+      opacity: 0.3;
+    }
+  
+    &:hover .middle {
+      opacity: 1;
+    }
+  
+    .text {
+      color: white;
+      font-size: 16px;
+      padding: 4px 8px;
+    }
+  }
+  
+  h2 {
+    margin-top: 40px; // İsteğe bağlı, başlığın konumu için
+  }
