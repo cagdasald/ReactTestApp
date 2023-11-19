@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+
+#bmi-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .bmiContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      min-width: 265x;
+      margin: 15px;
+      box-sizing: border-box;
+      background: #d1d9e6;
+      border-radius: 2px;
+      color: $black;
+
+      &.dark {
+        background: #242424;
+        color: $white;
+      }
+
+      .ant-switch {
+        background-color: rgb(57, 57, 159);
+        &.ant-switch-checked {
+          background-color: yellow !important;
+        }
+      }
+
+      .title {
+        align-self: flex-start;
+        font-size: 16px;
+
+        span {
+          @extend .text-sm;
+          line-height: 20px;
+        }
+      }
+
+      .bodyStats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: $white;
+          padding: 25px 0;
+          width: 120px;
+          border-radius: 10px;
+          margin: 20px;
+          color: #000;
+
+          .text-md {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+
+          span {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+
+          .buttonWrapper {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+
+            button {
+              cursor: pointer;
+              font-size: 20px;
+              border-radius: 10px;
+              width: 35px;
+              height: 35px;
+              border: none;
+              background-color: #246afe;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .calculateButton {
+        cursor: pointer;
+        width: 80%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        color: $white;
+        background-color: #246afe;
+      }
+    }
+  }
+}

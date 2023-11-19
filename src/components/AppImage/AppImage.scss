@@ -10,11 +10,11 @@
     .image {
       opacity: 1;
       display: block;
+      object-fit: cover;
       width: 250px;
       height: 250px;
-      transition: 1 ease;
       backface-visibility: hidden;
-      border-radius: 12px;
+      border-radius: 4px;
     }
 
     .middle {
@@ -34,8 +34,9 @@
 
     .text {
       position: absolute;
-      @extend .text-md;
-      color: $primary-color;
+      @extend .text-xl;
+      font-size: 20px !important;
+      color: white;
       text-decoration: none;
       top: 50%;
       left: 50%;

@@ -11,8 +11,9 @@ body {
 }
 
 #app {
-  background-color: $black;
-  color: $primary-color;
+  background: #9b59b6;
+  background: radial-gradient(at center, #3498db, #9b59b6);
+  color: $white;
 
   .header {
     text-align: center;
