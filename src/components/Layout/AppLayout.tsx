@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import './AppLayout.scss';
 
 
 interface IProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 function AppLayout(props: IProps) {

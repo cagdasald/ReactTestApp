@@ -15,18 +15,6 @@ function MenuPage() {
             <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
           </Link>
         </div>
-
-        <div>
-          <Link to={router.WEATHER}>
-            <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
-          </Link>
-        </div>
-        
-        <div>
-          <Link to={router.WEATHER}>
-            <AppImage src={weather} alt="WeatherApp" subText="WeatherApp" />
-          </Link>
-        </div>
       </div>
     </div>
   );

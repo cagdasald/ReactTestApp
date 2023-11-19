@@ -11,11 +11,11 @@ body {
 }
 
 #app {
-  background-image: linear-gradient(to bottom, #8360c3, #2ebf91);
+  background-color: $black;
+  color: $primary-color;
 
   .header {
     text-align: center;
-    color: $primary-color;
 
   }
 }

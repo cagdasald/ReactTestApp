@@ -1,9 +1,12 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
-.container {
+#app-image {
+  .container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin: 0 10px;
-    
+
     .image {
       opacity: 1;
       display: block;
@@ -11,29 +14,37 @@
       height: 250px;
       transition: 1 ease;
       backface-visibility: hidden;
+      border-radius: 12px;
     }
-  
+
     .middle {
       transition: 2 ease;
       opacity: 0;
       text-align: center;
     }
-  
+
     &:hover .image {
-      opacity: 0.3;
+      opacity: 0.6;
+      filter: blur(2px);
     }
-  
+
     &:hover .middle {
       opacity: 1;
     }
-  
+
     .text {
-      color: white;
-      font-size: 16px;
-      padding: 4px 8px;
+      position: absolute;
+      @extend .text-md;
+      color: $primary-color;
+      text-decoration: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
     }
   }
-  
+
   h2 {
-    margin-top: 40px; // İsteğe bağlı, başlığın konumu için
+    margin-top: 40px;
   }
+}

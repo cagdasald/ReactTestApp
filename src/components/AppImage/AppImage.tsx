@@ -9,10 +9,12 @@ interface IProps {
 
 function AppImage(props: IProps) {
   return (
-    <div className="container">
-      <img src={props.src} alt={props.alt} className="image" />
-      <div className="middle">
-        <div className="text">{props.subText}</div>
+    <div id="app-image">
+      <div className="container">
+        <img src={props.src} alt={props.alt} className="image" />
+        <div className="middle">
+          <div className="text">{props.subText}</div>
+        </div>
       </div>
     </div>
   );

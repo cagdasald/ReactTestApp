@@ -7,9 +7,43 @@
 }
 
 .title{
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: 800;
     font-style: normal;
     font-stretch: normal;
 }
-  
+
+.text-sm {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+ 
+.text-md {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.text-l {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.text-xl {
+    font-size: 40px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.text-xxxl {
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
